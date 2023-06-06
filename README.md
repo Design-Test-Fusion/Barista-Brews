@@ -44,3 +44,16 @@ Simply clone the code to your local machine and run it in you desired editor. Yo
 <img src = "assets/Add_a_drink_page.jpg" alt = "add a new drink page" width = "500">
 <img src = "assets/Feedback_Page.jpg" alst = "Feedback" width = "500">
 <img src = "assets/Inspiration_Page.jpg" alt ="Inspiration Page" alt = "Ispiration Page" width = "500">
+
+## Snapshots
+
+<img src = "assets/Home_page2.png" alt ="Home page" width = "500">
+<img src = "assets/item_page2.png" alt ="item page" width = "500">
+
+<img src = "assets/about_page.png" alt ="about page" width = "500">
+<img src = "assets/about_page_member_details.png" alt ="about page member details" width = "500">
+
+<img src = "assets/add_a_drink_page2.png" alt ="add a drink page" width = "500">
+<img src = "assets/feedback.png" alt ="feedback" width = "500">
+
+<img src = "assets/inspiration_page2.png" alt ="Inspiration Page" width = "500">
