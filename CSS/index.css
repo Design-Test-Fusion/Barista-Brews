@@ -2,6 +2,8 @@
     color: rgb(51, 112, 59);
     font-size: 18px;
     font-family: 'Jura', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
@@ -11,12 +13,20 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 115px;
+    margin-right: 115px;
 }
 
 header ul {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -77,18 +87,29 @@ main {
     color: rgb(51, 112, 59);
 }
 
-footer {
+/* footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+footer {
+    display: flex;
+    padding-bottom: 15px;
+    text-align: right;
+    border-top: solid rgba(0, 0, 0, 0.3) 2px;
+    margin: 0 115px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 60px;
 }
 
 .social_links {
-    text-decoration: none;
     display: flex;
     align-items: center;
 }
 
 .social_links i {
     width: 25px;
+    color: rgb(20, 20, 20);
 }
