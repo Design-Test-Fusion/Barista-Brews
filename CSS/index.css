@@ -1,0 +1,25 @@
+* {
+    color: #33713B;
+    font-size: 18px;
+    font-family: 'Jura', sans-serif, 'Kaushan Script', cursive, 'Pacifico', cursive;
+    /*
+    font-family: 'Jura', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Pacifico', cursive;*/
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(235, 232, 225);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
