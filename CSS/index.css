@@ -23,3 +23,15 @@ main {
     min-height: calc(100vh - 50px);
     display: flex;
 }
+
+.welcome_message {
+    background-image: url(../assets/landing_page_background.png);
+    background-size: 1224px 785px;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    min-width: 1200px;
+    min-height: 785px;
+    width: auto;
+    height: auto;
+}
