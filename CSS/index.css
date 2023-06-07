@@ -1,15 +1,22 @@
 * {
-    color: #33713B;
+    color: rgb(51, 112, 59);
     font-size: 18px;
-    font-family: 'Jura', sans-serif, 'Kaushan Script', cursive, 'Pacifico', cursive;
-    /*
     font-family: 'Jura', sans-serif;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Pacifico', cursive;*/
 }
 
 html {
     background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
 }
 
 body {
@@ -22,16 +29,66 @@ body {
 main {
     min-height: calc(100vh - 50px);
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .welcome_message {
     background-image: url(../assets/landing_page_background.png);
-    background-size: 1224px 785px;
-    padding: 20px;
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
     display: flex;
-    justify-content: end;
-    min-width: 1200px;
-    min-height: 785px;
-    width: auto;
-    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    min-height: 830px;
+}
+
+.message_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 180px;
+}
+
+.website_name {
+    font-size: 100px;
+    padding: 0px;
+    margin: 0px;
+    width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.website_caption {
+    font-size: 30px;
+    width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.coffee {
+    font-size: 40px;
+    color: rgb(51, 112, 59);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_links {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social_links i {
+    width: 25px;
 }
