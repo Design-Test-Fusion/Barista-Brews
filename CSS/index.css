@@ -1,0 +1,37 @@
+* {
+    color: #33713B;
+    font-size: 18px;
+    font-family: 'Jura', sans-serif, 'Kaushan Script', cursive, 'Pacifico', cursive;
+    /*
+    font-family: 'Jura', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Pacifico', cursive;*/
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(235, 232, 225);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+.welcome_message {
+    background-image: url(../assets/landing_page_background.png);
+    background-size: 1224px 785px;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    min-width: 1200px;
+    min-height: 785px;
+    width: auto;
+    height: auto;
+}
