@@ -1,22 +1,67 @@
-/*
-- coffee: roast levels:
-    Light roast
-    Medium roast
-    Medium-dark roast
-    Dark roast
-- type
-    hot
-    cold
-- description
-- Ingredients
-- steps
-*/
+'use strict';
 
 let coffeeDrinks = [
-    { name: 'Espresso', roast: 'Dark Roast', type: 'Hot', Ingredients: 'Water, Coffee Grind', steps: 'Add the coffee grind to your espresso machine, fill the espresso water tank with water, start the espresso machine to make your espresso' },
-    { name: 'Latte', roast: 'Medium Roast', type: 'Hot, Cold', Ingredients: 'Espresso, Steamed Milk, Milk Foam, Optional Flavoring', steps: 'Prepare your espresso shot, Steam your milk using a steam wand or froth it with a frother, pour the espresso shot in your favorite cup and add the milk to it, scoop the foam and add it to top of your drink and enjoy, you can add some flaovring like syrups (ex: vanilla or caramel) or cocoa powder' },
-    { name: 'Macchiato', roast: 'Light Roast', type: 'Hot, Cold', Ingredients: 'Espresso, Steam Milk, Milk Foam', steps: 'Prepare your espresso shot, Steam your milk using a steam wand or froth it with a frother, Pour your espress shot in your favorite cup, Add the steamed / frothed milk put the foam on top' },
-    { name: 'Americano', roast: '', type: '', Ingredients: '', steps: '' },
-    { name: '', roast: '', type: '', Ingredients: '', steps: '' },
-    { name: '', roast: '', type: '', Ingredients: '', steps: '' },
-]
+    { name: 'Espresso', roast: 'Dark Roast', type: 'Hot', image: 'assets/espresso.png', Ingredients: 'Water, Coffee Grind', steps: 'Add the coffee grind to your espresso machine, fill the espresso water tank with water, start the espresso machine to make your espresso, Serve and enjoy' },
+    { name: 'Latte', roast: 'Medium Roast', type: 'Hot, Cold', image: 'assets/latte.png', Ingredients: 'Espresso, Steamed Milk, Milk Foam, Optional Flavoring', steps: 'Prepare your espresso shot, Steam your milk using a steam wand or froth it with a frother, pour the espresso shot in your favorite cup and add the milk to it, scoop the foam and add it to top of your drink and enjoy, you can add some flaovring like syrups (ex: vanilla or caramel) or cocoa powder, Serve and enjoy' },
+    { name: 'Macchiato', roast: 'Light Roast', type: 'Hot, Cold', image: 'assets/mecciato.png', Ingredients: 'Espresso, Steamed Milk, Milk Foam', steps: 'Prepare your espresso shot, Steam your milk using a steam wand or froth it with a frother, Pour your espress shot in your favorite cup, Add the steamed / frothed milk put the foam on top, Serve and enjoy' },
+    { name: 'Americano', roast: 'Dark Roast', type: 'Hot', image: 'assets/americana.png', Ingredients: 'Esresso, Hot Water, Milk or cream (optional), Sweetner (optional)', steps: 'Prepare one or two espresso shots, Pour the hot water on the espresso for milder taste, You can add milk or a sweetner like sugar or honey, Serve and enjoy' },
+    { name: 'Iced Coffee', roast: 'Dark Roast', type: 'Cold', image: 'assets/ilish coffe.png', Ingredients: 'Coffee, Ice, Milk or cream (opional), Sweetner (optional), Flavorings (optional), Garnish or toppings (optional)', steps: 'Brew your coffee and leave it to coll down to the room temrature, fill a cup or glass (up to your preference) with ice or crushed ice, Add milk or cream for extra tast (up to your preference), Stir the mixture to combine the ingredients, Add toppings of your choice like whipped and chocolate shavings or cocoa powder or other toppings (up to your preference), serve immediatly and enjoy' },
+    { name: 'Cream Latte', roast: 'Medium Roast', type: 'Hot', image: 'assets/latte with ceam.png', Ingredients: 'Espresso, Milk, Sweetner (optional), Vanilla extract (optional), Whipped cream (optional), Sprinkles (optional)', steps: 'Prepare your espresso shot, Heat your milk and froth it using a frother, Pour the espresso in a cup, Slowly pour the milk over the espresso and keep holding back the foam with a spoon to allow the creamy milk to pour first, Spoon the remaining foam on the top of the latte, add a sweetner and some toppings based of your choice like cinnamon powder or chocolate shavings for extra flavor and a nice look, Serve and enjoy' },
+];
+
+let coffeeDrinksToJSON = JSON.stringify(coffeeDrinks);
+localStorage.setItem('coffeeDrinksDummy', coffeeDrinksToJSON);
+
+//for getting the drinks back from the LS
+// let coffeeDrinksFromJSON = JSON.parse(coffeeDrinksToJSON);
+
+//The location of the drinks in the Home Page
+let targetArea = document.getElementById('drink_cards');
+
+for (let i = 0; i < coffeeDrinks.length; i++) {
+
+    //Creating elements
+    let card = document.createElement('section');
+    let cardBody = document.createElement('section');
+    let cardTitle = document.createElement('p');
+    let coffeeRoastLabel = document.createElement('section');
+    let coffeeBeanImg = document.createElement('img');
+    let labelText = document.createElement('p');
+    let drinkImage = document.createElement('img');
+
+    //Assigning values to the elements
+    cardTitle.textContent = coffeeDrinks[i].name;
+    coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
+    labelText.textContent = coffeeDrinks[i].roast;
+    drinkImage.setAttribute('src', coffeeDrinks[i].image);
+
+    //Appending elements
+    coffeeRoastLabel.appendChild(coffeeBeanImg);
+    coffeeRoastLabel.appendChild(labelText);
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(coffeeRoastLabel);
+    card.appendChild(cardBody);
+    card.appendChild(drinkImage);
+    targetArea.appendChild(card);
+
+    //Styling
+    coffeeBeanImg.style.width = '40px';
+    drinkImage.style.width = '200px';
+    labelText.style.fontSize = '12px';
+    cardTitle.style.fontSize = '20px';
+    cardBody.style.display = 'flex';
+    cardBody.style.flexDirection = 'column';
+    cardBody.style.justifyContent = 'start';
+    cardBody.style.alignItems = 'center';
+    cardBody.style.gap = '100px';
+    card.style.display = 'flex';
+    card.style.justifyContent = 'center';
+    card.style.alignItems = 'center';
+    card.style.borderRadius = '31px';
+    card.style.backgroundColor = 'white';
+    card.style.padding = '15px';
+    card.style.boxShadow = `8px 8px 4px rgba(0, 0, 0, 0.5),
+    inset 0 0 12px rgba(0, 0, 0, 0.3)`;
+    card.style.width = '330px';
+    card.style.height = '350px';
+}
