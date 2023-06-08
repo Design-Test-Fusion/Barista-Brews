@@ -1,0 +1,195 @@
+* {
+    color: rgb(51, 112, 59);
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(235, 232, 225);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul a {
+    color: #36743E;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+#img {
+    position: absolute;
+    width: 54px;
+    height: 83px;
+    left: 202px;
+    top: 47px;
+}
+
+/* main */
+main {
+    justify-content: center;
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+.backGround {
+    margin: 0 auto;
+    margin-top: 210px;
+    margin-left: 510px;
+    position: absolute;
+    width: 800px;
+    height: 537px;
+    opacity: 20%;
+}
+
+#card {
+    /* position: absolute; */
+    /* left:50px; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+
+}
+
+#cardTitle {
+    position: absolute;
+    left: 270px;
+    top: 190px;
+    border-radius: 30px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+
+}
+
+#miniCard {
+    display: flex;
+    gap: 46px;
+}
+
+#img {
+    position: absolute;
+    width: 219px;
+    height: 325px;
+    left: 180px;
+    top: 300px;
+}
+
+#ingredients {
+    position: absolute;
+    left: 890px;
+    top: 220px;
+    text-align: center;
+    width: 235px;
+    height: 350px;
+    margin-top: 50px;
+    background: rgba(255, 254, 254, 0.4);
+    border-radius: 26px;
+}
+
+#ingredientsImg {
+    /* position: absolute; */
+    width: 144px;
+    height: 99px;
+    /* left: 716px;
+    top: 384px; */
+
+}
+
+#ing {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #36743E;
+}
+
+#steps {
+    position: absolute;
+    left: 580px;
+    top: 220px;
+    text-align: center;
+    width: 235px;
+    height: 350px;
+    margin-top: 50px;
+    background: rgba(255, 254, 254, 0.4);
+    border-radius: 26px;
+}
+
+#stp {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #36743E;
+}
+
+#stepsImg {
+    /* position: absolute; */
+    width: 144px;
+    height: 99px;
+    /* left: 996px;
+    top: 394px; */
+}
+
+footer {
+    display: flex;
+    padding-bottom: 15px;
+    text-align: right;
+    border-top: solid rgba(0, 0, 0, 0.3) 2px;
+    margin: 0 115px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: start;
+    font-size: x-large;
+    gap: 20px;
+}
+
+.footer-icons i {
+    color: #151515;
+}
+
+footer p {
+    margin: 0;
+    color: #151515;
+
+}

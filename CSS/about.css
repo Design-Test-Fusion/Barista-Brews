@@ -1,12 +1,14 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-size: 18px;
+    font-family: 'Jura', sans-serif;
 }
   
 .container {
-    margin-top: 204px;
-    margin-left: 236px;
-    margin-right: 350px;
+    margin-top: 90px;
+    /* margin-left: 236px;
+    margin-right: 350px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +17,19 @@
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 31px;
+    width: 950px;
+  }
+
+  .section1 {
+    background-image: url("../pic/backgroundimg.png");
+    background-position: right bottom;
+    mix-blend-mode: multiply;
+    background-size: 593px 651px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
   
   .container img {
@@ -39,15 +54,6 @@ margin: 75px ;
     background-color:white;
   }
 
-
-  .back-image {
-    background-image: url("../pic/backgroundimg.png");
-    background-position: right bottom; 
-    mix-blend-mode: multiply;
-    background-size: 593px 651px;
-    background-repeat: no-repeat;
-  }
-  
   .h1 {
 font-family: 'Jura';
 font-style: normal;
@@ -97,12 +103,6 @@ body {
 }
 
 
-/* Raneem */
-.background {
-    border-radius: 50px;
-    background-color: #EBE8E1;
-}
-
 .team-members-section {
     margin-top: 200px;
     display: flex;
@@ -114,14 +114,6 @@ body {
     font-size: 60px;
     color: #36743E
 }
-.background-img-body {
-    position: absolute;
-    width: 965px;
-    height: 543px;
-    bottom: 0;
-    right: 0;
-}
-
 
 
 .members-row {
@@ -146,7 +138,6 @@ body {
     width: inherit;
     height: 300px;
     padding: 15px;
-    background: #EBE8E1;
     border-radius: 20px;
     transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
     transition-duration: .5s;
@@ -162,7 +153,6 @@ body {
 .front {
     transform: rotateY(0deg);
     color: #36743E;
-    background: #EBE8E1;
 
 
 }
@@ -243,33 +233,27 @@ ul {
 ul a{
     color: #36743E; 
     font-weight: 500;
-font-size: 20px;
-line-height: 24px;
     text-decoration: none;
 }
 
 
-footer{
+footer {
     display: flex;
     padding-bottom: 15px;
     text-align: right;
-border-top: solid  rgba(0, 0, 0, 0.3) 2px;
-margin: 0 115px;
-justify-content: space-between;
-padding: 15px;
-margin-top: 60px;
+    border-top: solid rgba(0, 0, 0, 0.3) 2px;
+    margin: 0 115px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 60px;
 }
 
-.footer-icons {
+.social_links {
     display: flex;
-    justify-content: start;
-    font-size: x-large;
-    gap: 20px;
+    align-items: center;
 }
-.footer-icons i {
-    color: #151515;
 
-}
-footer p {
-    margin: 0;
+.social_links i {
+    width: 25px;
+    color: rgb(20, 20, 20);
 }

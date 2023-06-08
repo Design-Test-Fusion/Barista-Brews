@@ -87,11 +87,11 @@ main {
     color: rgb(51, 112, 59);
 }
 
-/* footer {
+.drink_cards {
+    overflow: hidden;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+}
 
 footer {
     display: flex;
