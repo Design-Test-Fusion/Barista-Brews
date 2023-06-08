@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul a {
+    color: #36743E;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(235, 232, 225);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+#hed {
+    color: #EBE8E1;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+
+#form1 {
+    position: absolute;
+    margin: 22%;
+    margin-top: 5px;
+    padding: 100px;
+    border-radius: 12px;
+    color: #EBE8E1;
+    max-width: 300px;
+    font-family: 'Jura', sans-serif;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 30px;
+    border-radius: 10px;
+    background: #f1f1f1;
+}
+
+p {
+    text-align: center;
+}
+
+#block {
+    background-image: url(../assets/beans_background.png);
+    background-color: #5B6C61;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    left: 248px;
+    top: 160px;
+    background-position: center;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    margin: 0px;
+}
+
+
+#u {
+    padding: 15px;
+    margin: 10px;
+}
+
+#submit1 {
+    border-radius: 23px;
+    background-color: #EBE8E1;
+    padding: 17px 20px;
+    margin: 20px;
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+}
+
+#submit1:hover {
+    background-color: #dae9df;
+}
+
+footer {
+    display: flex;
+    padding-bottom: 15px;
+    text-align: right;
+    border-top: solid rgba(0, 0, 0, 0.3) 2px;
+    margin: 0 115px;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: start;
+    font-size: x-large;
+    gap:10px;
+}
+
+.footer-icons i {
+    color: #151515;
+}
+
+footer p {
+    margin: 0;
+}
