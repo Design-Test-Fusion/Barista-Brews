@@ -12,15 +12,16 @@ let coffeeDrinks = [
 let coffeeDrinksToJSON = JSON.stringify(coffeeDrinks);
 localStorage.setItem('coffeeDrinksDummy', coffeeDrinksToJSON);
 
-//for getting the drinks back from the LS
-// let coffeeDrinksFromJSON = JSON.parse(coffeeDrinksToJSON);
-
 //The location of the drinks in the Home Page
 let targetArea = document.getElementById('drink_cards');
+
+//Initilizing an object to save the user choice
+let userChoice = { name: '', roast: '', type: '', image: '', ingeredients: '', steps: '' };
 
 for (let i = 0; i < coffeeDrinks.length; i++) {
 
     //Creating elements
+    let link = document.createElement('a');
     let card = document.createElement('section');
     let cardBody = document.createElement('section');
     let cardTitle = document.createElement('p');
@@ -34,6 +35,19 @@ for (let i = 0; i < coffeeDrinks.length; i++) {
     coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
     labelText.textContent = coffeeDrinks[i].roast;
     drinkImage.setAttribute('src', coffeeDrinks[i].image);
+    link.setAttribute('href', '');//item.html
+    link.setAttribute('target', '_blank');
+
+    //Saving the user choice to local storage
+    link.addEventListener('click', function () {
+        userChoice.name = coffeeDrinks[i].name;
+        userChoice.image = coffeeDrinks[i].image;
+        userChoice.ingeredients = coffeeDrinks[i].Ingredients;
+        userChoice.roast = coffeeDrinks[i].roast;
+        userChoice.steps = coffeeDrinks[i].steps;
+        userChoice.type = coffeeDrinks[i].type;
+        localStorage.setItem('user choice', JSON.stringify(userChoice));
+    });
 
     //Appending elements
     coffeeRoastLabel.appendChild(coffeeBeanImg);
@@ -42,7 +56,8 @@ for (let i = 0; i < coffeeDrinks.length; i++) {
     cardBody.appendChild(coffeeRoastLabel);
     card.appendChild(cardBody);
     card.appendChild(drinkImage);
-    targetArea.appendChild(card);
+    link.appendChild(card);
+    targetArea.appendChild(link);
 
     //Styling
     coffeeBeanImg.style.width = '40px';
