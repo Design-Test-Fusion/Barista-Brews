@@ -82,7 +82,19 @@ color: #33713B;
     
     color: #5B6C61; 
 }
+body {
+    background-color: #EBE8E1;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px ;
+    background-image: url("../pic/backgroundimg.png");
+    background-position: right bottom;
+    mix-blend-mode: multiply;
+    background-size: 593px 651px;
+    background-repeat: no-repeat;
 
+
+}
 
 
 /* Raneem */
