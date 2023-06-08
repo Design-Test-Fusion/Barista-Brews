@@ -29,11 +29,26 @@ a {
     text-decoration: none;
 }
 
+/* .background_image {
+    margin: 0 auto;
+    margin-top: 1200px;
+    margin-left: 696px;
+    position: absolute;
+    width: 800px;
+    height: 537px;
+    opacity: 20%;
+} */
+
 body {
     background-color: rgb(235, 232, 225);
     border-radius: 25px;
     margin: 15px;
     padding: 15px;
+    background-image: url(../assets/coffee-branch-bean_67600-414.png);
+    background-position: right bottom;
+    mix-blend-mode: multiply;
+    background-size: 593px 651px;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -87,11 +102,48 @@ main {
     color: rgb(51, 112, 59);
 }
 
-/* footer {
+.drink_cards {
+    overflow: hidden;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-} */
+    padding: 30px;
+    gap: 120px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 31px;
+    background-color: white;
+    padding: 15px;
+    box-shadow:
+        8px 8px 4px rgba(0, 0, 0, 0.5),
+        inset 0 0 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 350px;
+}
+
+.card_title {
+    font-size: 20px;
+}
+
+.card_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee_roast p {
+    font-size: 12px;
+}
+
+.test_img {
+    max-height: 330px;
+}
 
 footer {
     display: flex;
@@ -112,4 +164,8 @@ footer {
 .social_links i {
     width: 25px;
     color: rgb(20, 20, 20);
+}
+
+#p {
+    color: black;
 }
