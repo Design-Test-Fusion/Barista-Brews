@@ -8,36 +8,38 @@
     <link rel="stylesheet" href="./CSS/feedback.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jura:wght@300&family=Roboto+Condensed:wght@300&family=Shadows+Into+Light&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/780d6f6934.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af4ce8c886.js" crossorigin="anonymous"></script>
+   
 </head>
     <body>
     <header>
-        <img id="img" src="./assets/logo.png" alt="Logo" width="54px" height="83px"/>
-        <ul >
-            <a id="home" href="./index.html">Home</a>
-            <a id="about" href="./about.html">About us</a>
-            <a id="add" href="./add.html">Add a Drink</a>
-            <a id="feedback" href="./feedback.html">Feedback</a>
-        </ul>
+        <img src="./assets/logo.png" alt="Logo" width="54px" height="83px" />
+        <ul>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About us</a>
+            <a href="./add.html">Add a Drink</a>
+            <a href="./feedback.html">Feedback</a>
+        </ul> 
     </header>
     <main>
     <div id="block">
+        
     <form id="form1">
     <h1 id="hed">Feedback</h1>
     <input type="text" id="u"  name="username" placeholder="Your Name"><br>
     <input type="email" id="u"  name="email"  placeholder="Your Email"><br>
-    <input type="text"  id="u"   name="text"  placeholder="Add yor feedback"><br>
-        <p id="p1"> Would You like to visit us again  ?</p>
-        <input type="radio" id="yes" name="yesorno" value="Yes" class="a">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="yesorno" value="NO" class="a">
-        <label for="no">No</label><br>
+    <textarea class="feed" id="u" placeholder="feedback" >feedback</textarea>
+
+        <p class="pa"> Would You like to visit us again  ?</p>
+        <input type="radio" id="yes" name="yesorno" value="Yes" >
+        <label for="Yes" id="yes">Yes</label>
+        <input type="radio" id="no" name="yesorno" value="NO" >
+        <label for="No"  id="yes">No</label><br>
     
     <input type="submit" value="Submit" id="submit1" onclick="alert ('Thank You')" >
     </form>
+
 </div>
     </main>
     
@@ -46,8 +48,8 @@
         <section id="footer-icons"
         <a id="instagram" href="https://instagram.com/" ><i class="fa-brands fa-square-instagram" style="color: #000000;"></i>
             <a id="facebook" href="https://www.facebook.com" ><i class="fa-brands fa-square-facebook" style="color: #000000;"></i>
-            <a id="github" href="https://www.github.com/" ></a><i class="fa-brands fa-github" style="color: #000000;"></i>
-            <a id="linkedin" href="https://www.linkedin.com" ></a><i class="fa-brands fa-square-github" style="color: #000000;"></i>
+            <a id="github" href="https://www.github.com/" ><i class="fa-brands fa-square-github" style="color: #000000;"></i>
+            <a id="linkedin" href="https://www.linkedin.com" ><i class="fa-brands fa-linkedin" style="color: #000000;"></i>
             </a>
             </section>
         <p id="p">
