@@ -39,6 +39,7 @@ margin: 75px ;
     background-color:white;
   }
 
+
   .back-image {
     background-image: url("../pic/backgroundimg.png");
     background-position: right bottom; 
@@ -47,17 +48,6 @@ margin: 75px ;
     background-repeat: no-repeat;
   }
   
-  body {
-    border-radius: 25px;
-    background-color:white;
-    margin: 15px;
-    padding: 15px ;
-    font-family: 'Jura', sans-serif;
-    position: relative;
-    background-position: right bottom; 
-    mix-blend-mode: multiply;
-    background-size: 593px 651px;
-  }
   .h1 {
 font-family: 'Jura';
 font-style: normal;
