@@ -18,7 +18,7 @@
         <img src="assets/logo.png" alt="logo"width="54px" height="83px">
         <ul class="ul">
             <a href="index.html">Home</a>
-            <a href="./about.html">About us</a>
+            <a href="about.html">About us</a>
             <a href="add_drink.html">Add a Drink</a>
             <a href="feedback.html">Feedback</a>
         </ul>
@@ -33,25 +33,27 @@
         <section class="container">
             <img class="img1" src="assets/man.png" alt="man">
             <h1 class="text"> Create a Drink </h1>
-            <form  action="creat-drink">
-                <input class="name" type="text"   placeholder="Drink name"  ><br>
-                <input class="drink-img" type="url" placeholder="URL image" >
-                <input class="drink-In" type="text" placeholder="Drink Ingredients" >
-                <input class="drink-st" type="text" placeholder="Drink Steps" >
+            <form >
+                <input class="name" type="text"   placeholder="Drink name" required ><br>
+                <input class="drink-img" type="url" placeholder="URL image" required  >
+                <input class="drink-In" type="text" placeholder="Drink Ingredients" required >
+                <input class="drink-st" type="text" placeholder="Drink Steps"required  >
                 <section class="drink-ty">
                 <label>Drink type</label> 
                 <!-- <label ><input type="radio" name="hot" checked>Hot</label>
                 <label > <input type="radio" name="cold">Cold</label> -->
 
-                <input type="radio" id="hot" name="drone" value="hot">
-                <label >Hot</label>
-                <input type="radio" id="cold" name="drone" value="cold">
-                <label >Cold</label>
+                <input type="radio" id="hot" name="drone" value="hot" required>
+                <label for="hot" >Hot</label>
+                <input type="radio" id="cold" name="drone" value="cold" required>
+                <label for="cold"  >Cold</label>
                 
                 <input class="submit" type="submit" value="Add a Drink">
 
+        
+
               
-                   
+
                
                 </section>
 
