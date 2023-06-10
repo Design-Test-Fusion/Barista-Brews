@@ -35,7 +35,7 @@ for (let i = 0; i < coffeeDrinks.length; i++) {
     coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
     labelText.textContent = coffeeDrinks[i].roast;
     drinkImage.setAttribute('src', coffeeDrinks[i].image);
-    link.setAttribute('href', '');//item.html
+    link.setAttribute('href', 'item.html');//item.html
     link.setAttribute('target', '_blank');
 
     //Saving the user choice to local storage
