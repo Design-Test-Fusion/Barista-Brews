@@ -38,7 +38,7 @@ function renderCard(targetArea, list) {
         coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
         labelText.textContent = list[i].roast;
         drinkImage.setAttribute('src', list[i].image);
-        link.setAttribute('href', '');//item.html
+        link.setAttribute('href', 'item.html');
         link.setAttribute('target', '_blank');
         //Saving the user choice to local storage
         link.addEventListener('click', function () {
