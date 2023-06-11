@@ -30,7 +30,7 @@ a {
 }
 
 body {
-    background-color: rgb(235, 232, 225);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     margin: 15px;
     padding: 15px;
@@ -120,8 +120,6 @@ main {
 
 footer {
     display: flex;
-    padding-bottom: 15px;
-    text-align: right;
     border-top: solid rgba(0, 0, 0, 0.3) 2px;
     margin: 0 115px;
     justify-content: space-between;
@@ -131,12 +129,10 @@ footer {
 
 .social_links {
     display: flex;
-    align-items: center;
 }
 
 .social_links i {
     width: 25px;
-    color: rgb(20, 20, 20);
 }
 
 #p {
