@@ -43,5 +43,3 @@ function handler(e) {
 
 let saveValues = document.getElementsByTagName('form')[0];
 saveValues.addEventListener('submit', handler);
-
-//comment
