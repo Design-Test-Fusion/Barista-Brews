@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,12 +16,12 @@
 
 <body>
     <header>
-        <img src="./assets/logo.png" alt="Logo" width="54px" height="83px" />
+        <img id="img" src="assets/logo.png" alt="Logo" width="80px" height="120px" />
         <ul>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About us</a>
-            <a href="./add_drink.html">Add a Drink</a>
-            <a href="./feedback.html">Feedback</a>
+            <a id="home" href="./index.html">Home</a>
+            <a id="about" href="./about.html">About us</a>
+            <a id="add" href="./add_drink.html">Add a Drink</a>
+            <a id="feedback" href="./feedback.html">Feedback</a>
         </ul>
     </header>
     <main>
@@ -30,39 +29,45 @@
 
             <form id="form1">
                 <h1 id="hed">Feedback</h1>
-                <input type="text" id="u" name="username" placeholder="Your Name"><br>
-                <input type="email" id="u" name="email" placeholder="Your Email"><br>
-                <textarea class="feed" id="u" placeholder="feedback">feedback</textarea>
-
+                <section class="input">
+                <input type="text" id="input1" name="username" placeholder="Your Name"   class="name"  required><br>
+                <input type="email" id="input2" name="email" placeholder="Your Email" class="email"  required><br>
+                <textarea class="feed" id="input13"   name="feedback" placeholder="feedback"  class="feedback" required></textarea>
+            </section>
                 <p class="pa"> Would You like to visit us again ?</p>
-                <input type="radio" id="yes" name="yesorno" value="Yes">
-                <label for="Yes" id="yes">Yes</label>
-                <input type="radio" id="no" name="yesorno" value="NO">
-                <label for="No" id="yes">No</label><br>
-
-                <input type="submit" value="Submit" id="submit1" onclick="alert ('Thank You')">
+                <section class="radio">
+                    <section class="radioinput">
+                <input type="radio" id="yes" name="yesorno" value="Yes" required>
+                <label for="yes" class="yes">Yes</label>
+            </section>
+            <section class="radioinput">
+                <input type="radio" id="no"  name="yesorno" value="NO" required>
+                <label for="no" class="yes">No</label  ><br>
+            </section>
+            </section>
+                <input type="submit" value="Submit" id="submit1"  >
             </form>
 
         </div>
     </main>
 
-    <footer class="footer">
-
-        <section id="footer-icons">
-            <a id="instagram" href="https://instagram.com/"><i class="fa-brands fa-square-instagram"
-                    style="color: #000000;"></i></a>
-            <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"
-                    style="color: #000000;"></i></a>
-            <a id="github" href="https://www.github.com/"><i class="fa-brands fa-square-github"
-                    style="color: #000000;"></i></a>
-            <a id="linkedin" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"
-                    style="color: #000000;"></i>
-            </a>
+    <footer >
+        <section class="social_links">
+            <a id="instagram" href="https://instagram.com/"><i
+                    class="social_media_icons fa-brands fa-square-instagram"></i></a>
+            <a id="facebook" href="https://www.facebook.com"><i
+                    class="social_media_icons fa-brands fa-square-facebook"></i></a>
+            <a id="github" href="https://github.com/Design-Test-Fusion/Barista-Brews"><i
+                    class="social_media_icons fa-brands fa-square-github"></i></a>
+            <a id="linkedin" href="https://www.linkedin.com"><i
+                    class="social_media_icons fa-brands fa-linkedin"></i></a>
         </section>
         <p id="p">
-            Copyrights©Design Test Fusion,All rights reserved
+            Copyrights © Design Test Fusion, All rights reserved
         </p>
+    
     </footer>
+    <script src="./JS/feedback.js"
 </body>
 
 </html>
