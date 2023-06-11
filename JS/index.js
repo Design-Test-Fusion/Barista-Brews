@@ -24,6 +24,7 @@ renderCard(targetArea, coffeeDrinks);
 //This method renders a the drink card
 function renderCard(targetArea, list) {
     for (let i = 0; i < list.length; i++) {
+
         //Creating elements
         let link = document.createElement('a');
         let card = document.createElement('section');
@@ -33,6 +34,7 @@ function renderCard(targetArea, list) {
         let coffeeBeanImg = document.createElement('img');
         let labelText = document.createElement('p');
         let drinkImage = document.createElement('img');
+
         //Assigning values to the elements
         cardTitle.textContent = list[i].name;
         coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
@@ -40,6 +42,7 @@ function renderCard(targetArea, list) {
         drinkImage.setAttribute('src', list[i].image);
         link.setAttribute('href', 'item.html');
         link.setAttribute('target', '_blank');
+
         //Saving the user choice to local storage
         link.addEventListener('click', function () {
             userChoice.name = list[i].name;
@@ -50,6 +53,7 @@ function renderCard(targetArea, list) {
             userChoice.type = list[i].type;
             localStorage.setItem('user choice', JSON.stringify(userChoice));
         });
+
         //Appending elements
         coffeeRoastLabel.appendChild(coffeeBeanImg);
         coffeeRoastLabel.appendChild(labelText);
@@ -59,6 +63,7 @@ function renderCard(targetArea, list) {
         card.appendChild(drinkImage);
         link.appendChild(card);
         targetArea.appendChild(link);
+
         //Styling
         coffeeBeanImg.style.width = '40px';
         drinkImage.style.width = '200px';
@@ -94,66 +99,4 @@ function renderSavedDrinksByUser() {
 }
 renderSavedDrinksByUser();
 
-// for (let i = 0; i < coffeeDrinks.length; i++) {
-
-//     //Creating elements
-//     let link = document.createElement('a');
-//     let card = document.createElement('section');
-//     let cardBody = document.createElement('section');
-//     let cardTitle = document.createElement('p');
-//     let coffeeRoastLabel = document.createElement('section');
-//     let coffeeBeanImg = document.createElement('img');
-//     let labelText = document.createElement('p');
-//     let drinkImage = document.createElement('img');
-
-//     //Assigning values to the elements
-//     cardTitle.textContent = coffeeDrinks[i].name;
-//     coffeeBeanImg.setAttribute('src', 'assets/beans33.png');
-//     labelText.textContent = coffeeDrinks[i].roast;
-//     drinkImage.setAttribute('src', coffeeDrinks[i].image);
-//     link.setAttribute('href', '');//item.html
-//     link.setAttribute('target', '_blank');
-
-//     //Saving the user choice to local storage
-//     link.addEventListener('click', function () {
-//         userChoice.name = coffeeDrinks[i].name;
-//         userChoice.image = coffeeDrinks[i].image;
-//         userChoice.ingeredients = coffeeDrinks[i].Ingredients;
-//         userChoice.roast = coffeeDrinks[i].roast;
-//         userChoice.steps = coffeeDrinks[i].steps;
-//         userChoice.type = coffeeDrinks[i].type;
-//         localStorage.setItem('user choice', JSON.stringify(userChoice));
-//     });
-
-//     //Appending elements
-//     coffeeRoastLabel.appendChild(coffeeBeanImg);
-//     coffeeRoastLabel.appendChild(labelText);
-//     cardBody.appendChild(cardTitle);
-//     cardBody.appendChild(coffeeRoastLabel);
-//     card.appendChild(cardBody);
-//     card.appendChild(drinkImage);
-//     link.appendChild(card);
-//     targetArea.appendChild(link);
-
-//     //Styling
-//     coffeeBeanImg.style.width = '40px';
-//     drinkImage.style.width = '200px';
-//     labelText.style.fontSize = '12px';
-//     cardTitle.style.fontSize = '20px';
-//     cardBody.style.display = 'flex';
-//     cardBody.style.flexDirection = 'column';
-//     cardBody.style.justifyContent = 'start';
-//     cardBody.style.alignItems = 'center';
-//     cardBody.style.gap = '100px';
-//     card.style.display = 'flex';
-//     card.style.justifyContent = 'center';
-//     card.style.alignItems = 'center';
-//     card.style.borderRadius = '31px';
-//     card.style.backgroundColor = 'white';
-//     card.style.padding = '15px';
-//     card.style.boxShadow = `8px 8px 4px rgba(0, 0, 0, 0.5),
-//     inset 0 0 12px rgba(0, 0, 0, 0.3)`;
-//     card.style.width = '330px';
-//     card.style.height = '350px';
-// }
-
+//comment
