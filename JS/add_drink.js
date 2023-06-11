@@ -25,7 +25,7 @@ function handler(e) {
     const savedDrinksByUser = localStorage.getItem('drinksAddedByUser');
     let savedDrinksByUserArray = JSON.parse(savedDrinksByUser)
 
-    if(savedDrinksByUserArray) {
+    if (savedDrinksByUserArray) {
         savedDrinksByUserArray.push(drink)
     } else {
         savedDrinksByUserArray = [drink]
@@ -43,3 +43,5 @@ function handler(e) {
 
 let saveValues = document.getElementsByTagName('form')[0];
 saveValues.addEventListener('submit', handler);
+
+//comment
