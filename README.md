@@ -41,13 +41,13 @@ Simply clone the code to your local machine and run it in you desired editor. Yo
 
 ## Wireframes
 
-<img src = "assets/home_page.jpg" alt = "Home page" width = "500" >
-<img src = "assets/about_page.jpg" alt = "About Page" width = "500">
+<img src = "assets/home-page.png" alt = "Home page" width = "500" >
+<img src = "assets/about-us-page.png" alt = "About Page" width = "500">
 
-<img src = "assets/Item_page.jpg" alt = "Item Page" width = "500" >
-<img src = "assets/add_a_drink_page.jpg" alt = "add a new drink page" width = "500">
+<img src = "assets/item-page.png" alt = "Item Page" width = "500" >
+<img src = "assets/adddrink-page.png" alt = "add a new drink page" width = "500">
 
-<img src = "assets/feedback_page.jpg" alst = "Feedback" width = "500">
+<img src = "assets/feedback-page.png" alt = "Feedback" width = "500">
 
 ## Snapshots
 

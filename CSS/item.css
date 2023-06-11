@@ -36,7 +36,7 @@ ul {
 ul a {
     color: #36743E;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     text-decoration: none;
 }
@@ -109,7 +109,7 @@ main {
 
 #ingredients {
     position: absolute;
-    left: 890px;
+    left: 580px;
     top: 220px;
     text-align: center;
     width: 235px;
@@ -117,6 +117,7 @@ main {
     margin-top: 50px;
     background: rgba(255, 254, 254, 0.4);
     border-radius: 26px;
+    overflow-y: scroll;
 }
 
 #ingredientsImg {
@@ -139,7 +140,7 @@ main {
 
 #steps {
     position: absolute;
-    left: 580px;
+    left: 890px;
     top: 220px;
     text-align: center;
     width: 235px;
@@ -147,6 +148,7 @@ main {
     margin-top: 50px;
     background: rgba(255, 254, 254, 0.4);
     border-radius: 26px;
+    overflow-y: scroll;
 }
 
 #stp {
@@ -178,7 +180,7 @@ footer {
 }
 
 .footer-icons {
-    display: flex;
+    display: ;
     justify-content: start;
     font-size: x-large;
     gap: 20px;
