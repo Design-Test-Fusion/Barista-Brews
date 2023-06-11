@@ -4,7 +4,10 @@
     font-size: 18px;
     font-family: 'Jura', sans-serif;
 }
-  
+  .Bold{
+    font-weight: bold;
+
+  }
 .container {
     margin-top: 90px;
     /* margin-left: 236px;
@@ -222,6 +225,7 @@ header{
     padding-top: 15px;
     margin-left: 115px;
     margin-right: 115px;
+    
 }
 
 ul {
@@ -239,21 +243,27 @@ ul a{
 
 footer {
     display: flex;
-    padding-bottom: 15px;
-    text-align: right;
     border-top: solid rgba(0, 0, 0, 0.3) 2px;
-    margin: 0 115px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
-    margin-top: 60px;
 }
 
 .social_links {
     display: flex;
-    align-items: center;
+    gap: 15px;
 }
 
-.social_links i {
-    width: 25px;
-    color: rgb(20, 20, 20);
+.social_media_icons {
+    color: black;
+    font-size: 25px;
+}
+
+#p {
+    color: black;
+    font-weight: bold;
 }
