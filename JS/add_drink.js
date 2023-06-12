@@ -1,12 +1,11 @@
 'use strict'
-
-
 function Drink(name, img, ingredients, steps, type) {
     this.name = name;
     this.image = img;
     this.Ingredients = ingredients;
     this.steps = steps;
     this.type = type;
+    
 }
 
 
