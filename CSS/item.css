@@ -60,14 +60,12 @@ main {
 }
 
 #card {
-    /* position: absolute; */
-    /* left:50px; */
     display: flex;
     justify-content: center;
     margin: auto;
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 31px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
     width: 1000px;
     height: 500px;
     padding: 50px;
@@ -78,7 +76,7 @@ main {
     position: absolute;
     left: 270px;
     top: 230px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-family: 'Jura';
     font-style: normal;
     font-weight: bold;
@@ -110,7 +108,7 @@ main {
     height: 350px;
     margin-top: 50px;
     background: rgba(255, 254, 254, 0.4);
-    border-radius: 26px;
+    border-radius: 20px;
     overflow-y: scroll;
     padding: 10px;
 }
@@ -128,6 +126,7 @@ section#ingredients::-webkit-scrollbar {
 
 }
 
+
 #ing {
     font-family: 'Jura';
     font-style: normal;
@@ -135,6 +134,24 @@ section#ingredients::-webkit-scrollbar {
     font-size: 30px;
     line-height: 35px;
     color: #36743E;
+}
+
+#renderIngredients {
+    padding-left: 50px;
+
+}
+
+.ingredientsLi {
+    left: 57px;
+    top: 160px;
+    display: list-item;
+    width: 176px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    list-style-type: filled circle;
+    list-style-position: outside;
+
 }
 
 #steps {
@@ -146,22 +163,13 @@ section#ingredients::-webkit-scrollbar {
     height: 350px;
     margin-top: 50px;
     background: rgba(255, 254, 254, 0.4);
-    border-radius: 26px;
+    border-radius: 20px;
     overflow-y: scroll;
     padding: 10px;
 }
 
 section#steps::-webkit-scrollbar {
     display: block;
-}
-
-#stp {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-    color: #36743E;
 }
 
 #stepsImg {
@@ -173,6 +181,35 @@ section#steps::-webkit-scrollbar {
 }
 
 
+#stp {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #36743E;
+}
+
+#renderSteps {
+    padding-left: 50px;
+}
+
+.stepsLi {
+    /* position: absolute; */
+    /* left: 57px; */
+    /* top: 160px; */
+    display: list-item;
+    width: 176px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    list-style-type: filled circle;
+    list-style-position: outside;
+}
+
+.stepsLi::marker {
+    /* font-size: px; */
+}
 
 footer {
     display: flex;
