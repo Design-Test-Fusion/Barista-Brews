@@ -64,26 +64,13 @@ function renderCard(targetArea, list) {
         link.appendChild(card);
         targetArea.appendChild(link);
 
-        //Styling
-        coffeeBeanImg.style.width = '40px';
-        drinkImage.style.width = '200px';
-        labelText.style.fontSize = '12px';
-        cardTitle.style.fontSize = '20px';
-        cardBody.style.display = 'flex';
-        cardBody.style.flexDirection = 'column';
-        cardBody.style.justifyContent = 'start';
-        cardBody.style.alignItems = 'center';
-        cardBody.style.gap = '100px';
-        card.style.display = 'flex';
-        card.style.justifyContent = 'center';
-        card.style.alignItems = 'center';
-        card.style.borderRadius = '31px';
-        card.style.backgroundColor = 'white';
-        card.style.padding = '15px';
-        card.style.boxShadow = `8px 8px 4px rgba(0, 0, 0, 0.5),
-        inset 0 0 12px rgba(0, 0, 0, 0.3)`;
-        card.style.width = '330px';
-        card.style.height = '350px';
+        //giving the elements classes to use in css
+        coffeeBeanImg.setAttribute('class', 'beanImg');
+        drinkImage.setAttribute('class', 'drinkImage');
+        labelText.setAttribute('class', 'labelText');
+        cardTitle.setAttribute('class', 'cardTitle');
+        cardBody.setAttribute('class', 'cardBody');
+        card.setAttribute('class', 'card');
     }
 }
 
