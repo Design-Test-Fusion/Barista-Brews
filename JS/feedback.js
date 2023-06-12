@@ -72,6 +72,7 @@ function final(e) {
   openPopup();
   form1.reset();
 
+
 }
 function openPopup() {
   let popup = document.getElementById("popup")
