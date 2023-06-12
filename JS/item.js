@@ -22,6 +22,7 @@ function render() {
     let drinkIngredientsArray = objDummyArray.ingeredients.split(",");
     for (let i = 0; i < drinkIngredientsArray.length; i++) {
         let ingredientsElements = document.createElement('li');
+        ingredientsElements.setAttribute("class", "ingredientsLi");
         drinkIngredients.appendChild(ingredientsElements);
         ingredientsElements.textContent = drinkIngredientsArray[i];
     }
@@ -30,6 +31,7 @@ function render() {
     let drinkStepsArray = objDummyArray.steps.split(",");
     for (let i = 0; i < drinkStepsArray.length; i++) {
         let stepsElements = document.createElement('li');
+        stepsElements.classList.add("stepsLi");
         drinkSteps.appendChild(stepsElements);
         stepsElements.textContent = drinkStepsArray[i];
     }
@@ -38,22 +40,22 @@ function render() {
     drinkImage.textContent = objDummyArray.image;
 
     //Styling
-    drinkIngredients.style.position = "absolute";
-    drinkIngredients.style.left = "57px"
-    drinkIngredients.style.top = "160px"
-    drinkIngredients.style.display = "block";
-    drinkIngredients.style.width = "176px";
-    drinkIngredients.style.textAlign = "left";
-    drinkIngredients.style.fontWeight = "500";
-    drinkIngredients.style.fontSize = "18px";
+    //     drinkIngredients.style.position = "absolute";
+    //     drinkIngredients.style.left = "57px"
+    //     drinkIngredients.style.top = "160px"
+    //     drinkIngredients.style.display = "block";
+    //     drinkIngredients.style.width = "176px";
+    //     drinkIngredients.style.textAlign = "left";
+    //     drinkIngredients.style.fontWeight = "500";
+    //     drinkIngredients.style.fontSize = "18px";
 
-    drinkSteps.style.position = "absolute";
-    drinkSteps.style.left = "57px"
-    drinkSteps.style.top = "160px"
-    drinkSteps.style.display = "block";
-    drinkSteps.style.width = "176px";
-    drinkSteps.style.textAlign = "left";
-    drinkSteps.style.fontWeight = "500";
-    drinkSteps.style.fontSize = "18px";
+    //     drinkSteps.style.position = "absolute";
+    //     drinkSteps.style.left = "57px";
+    //     drinkSteps.style.top = "160px";
+    //     drinkSteps.style.display = "block";
+    //     drinkSteps.style.width = "176px";
+    //     drinkSteps.style.textAlign = "left";
+    //     drinkSteps.style.fontWeight = "500";
+    //     drinkSteps.style.fontSize = "18px";
 }
 render();
