@@ -35,6 +35,8 @@ function handler(e) {
 
     // save data to localstorage
     localStorage.setItem('drinksAddedByUser', stringSavedDrinksByUserArray)
+
+    openPopup();
 }
 
 
@@ -42,3 +44,14 @@ function handler(e) {
 
 let saveValues = document.getElementsByTagName('form')[0];
 saveValues.addEventListener('submit', handler);
+
+
+
+function openPopup() {
+    let popup = document.getElementById("popup")
+    popup.classList.add("open-popup")
+}
+function closePopup() {
+    popup.classList.remove("open-popup")
+}
+
