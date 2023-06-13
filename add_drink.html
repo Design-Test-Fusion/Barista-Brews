@@ -14,20 +14,15 @@
     <title>add-drinkpage</title>
 </head>
 <body>
-    <header class="header">
-        <img src="assets/logo.png" alt="logo"width="54px" height="83px">
-        <ul class="ul">
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="add_drink.html">Add a Drink</a>
-            <a href="feedback.html">Feedback</a>
+    <header>
+        <img id="img" src="assets/logo.png" alt="Logo" width="80px" height="120px" />
+        <ul>
+            <a id="home" href="./index.html">Home</a>
+            <a id="about" href="./about.html">About us</a>
+            <a id="add" href="./add_drink.html">Add a Drink</a>
+            <a id="feedback" href="./feedback.html">Feedback</a>
         </ul>
-
-           
-    
-
     </header>
-
     <main > 
         <img class="background"   src="assets/back1.png" alt="background">
         <section class="container">
@@ -40,21 +35,14 @@
                 <input  name="drinkSt" class="drink-st" type="text" placeholder="Drink Steps"required  >
                 <section class="drink-ty">
                 <label>Drink type</label> 
-                <!-- <label ><input type="radio" name="hot" checked>Hot</label>
-                <label > <input type="radio" name="cold">Cold</label> -->
-
                 <input type="radio" id="hot" name="drone" value="hot" required>
                 <label for="hot" >Hot</label>
                 <input type="radio" id="cold" name="drone" value="cold" required>
                 <label for="cold"  >Cold</label>
-                
                 <input class="submit" type="submit" value="Add a Drink">
+                </section>
+                
 
-        
-
-              
-
-               
                 </section>
 
         
@@ -64,24 +52,23 @@
         
 
     </main>
-
-    <footer class="footer">
-        <div class="icons">
-        <a id="instagram" href="https://instagram.com/" ><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
-        <a id="facebook" href="https://www.facebook.com" ><i class="fa-brands fa-square-facebook" style="color: #000000;"></i></a>
-        <a id="github" href="https://www.github.com/" ><i class="fa-brands fa-square-github" style="color: #000000;"></i></a>
-        <a id="linkedin" href="https://www.linkedin.com" ><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
-        </div>    
-        
-
-
-           
-             <p class="p">
-            Copyrights © Design Test Fusion, All rights reserved
-            </p>
-
-            
-    </footer>
     
+
+    <footer>
+        <section class="social_links">
+            <a id="instagram" href="https://instagram.com/"><i
+                    class="social_media_icons fa-brands fa-square-instagram"></i></a>
+            <a id="facebook" href="https://www.facebook.com"><i
+                    class="social_media_icons fa-brands fa-square-facebook"></i></a>
+            <a id="github" href="https://github.com/Design-Test-Fusion/Barista-Brews"><i
+                    class="social_media_icons fa-brands fa-square-github"></i></a>
+            <a id="linkedin" href="https://www.linkedin.com"><i
+                    class="social_media_icons fa-brands fa-linkedin"></i></a>
+        </section>
+        <p id="p">
+            Copyrights © Design Test Fusion, All rights reserved
+        </p>
+        </footer>
+
 </body>
 </html>
