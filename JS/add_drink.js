@@ -36,7 +36,11 @@ function handler(e) {
     // save data to localstorage
     localStorage.setItem('drinksAddedByUser', stringSavedDrinksByUserArray)
 
+
+
     openPopup();
+    form.reset();
+    let form1 =getElementById('form');
 }
 
 
