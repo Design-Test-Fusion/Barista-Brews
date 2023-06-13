@@ -5,10 +5,7 @@
         /* color: rgb(51, 112, 59); */
         font-size: 18px;
         font-family: 'Jura', sans-serif;
-        padding: 0;
-        margin: 0;
-        color: #33703b;
-
+    
     
     }
     html {
@@ -51,10 +48,11 @@
     
     header ul a {
         font-weight: bold;
+        color: #36743E;
     }
-    a{
+    
+    a {
         text-decoration: none;
-        
     }
     
     
@@ -77,67 +75,6 @@
         }
     
     
-<<<<<<< HEAD
-    .text{
-        font-size: 55.2264px;
-        position: absolute;
-        left: 49px;
-        color: #36743E;
-        font-weight: bold;
-        
-    }
-    .name{
-        box-sizing: border-box;
-        width: 343px;
-        height: 57px;
-        left: 66px;
-        top: 144px;
-        background-color: #ffff;
-        border: 1.53407px solid rgba(0, 0, 0, 0.1);
-        position: absolute;
-        border-radius: 15.3407px;
-        color: gray;
-        font-family: system-ui;
-        font-weight: 100;
-        font-size: small;
-        padding-left: 15px;
-       
-    }
-    .drink-img{
-        box-sizing: border-box;
-        width: 343px;
-        height: 57px;
-        left: 66px;
-        top: 220px;
-        background-color: #ffff;
-        border: 1.53407px solid rgba(0, 0, 0, 0.1);
-        position: absolute;
-        border-radius: 15.3407px; 
-        color: gray;
-        font-family: system-ui;
-        font-weight: 100;
-        font-size: small;
-        padding-left: 15px;
-
-    }
-    .drink-In{
-        box-sizing: border-box;
-        width: 343px;
-        height: 75px;
-        left: 66px;
-        top: 296px;
-        background-color: #ffff;
-        border: 1.53407px solid rgba(0, 0, 0, 0.1);
-        position: absolute;
-        border-radius: 15.3407px; 
-        color: gray;
-        font-family: system-ui;
-        font-weight: 100;
-        font-size: small;
-        padding-left: 15px;
-
-=======
->>>>>>> main
     
         .text{
             font-size: 55.2264px;
@@ -196,31 +133,6 @@
             padding-left: 15px;
         }
     
-<<<<<<< HEAD
-    .drink-st{
-        box-sizing: border-box;
-        width: 343px;
-        height: 75px;
-        left: 66px;
-        top: 390px;
-        background-color: #ffff;
-        border: 1.53407px solid rgba(0, 0, 0, 0.1);
-        position: absolute;
-        border-radius: 15.3407px; 
-        color: gray;
-        font-family: system-ui;
-        font-weight: 100;
-        font-size: small;
-        padding-left: 15px;
-    }
-    
-    .drink-ty{
-        position: absolute;
-        top: 480px;
-        left: 76px;
-        
-    }
-=======
         .drink-st{
             box-sizing: border-box;
             width: 343px;
@@ -243,7 +155,6 @@
             top: 469px;
             left: 76px;
         }
->>>>>>> main
     
         .submit{
             position: absolute;
@@ -298,12 +209,6 @@
         padding: 10px 0;
         background:#5B6C61 ;
         color: white;
-<<<<<<< HEAD
-        font-size: large;
-        border-color: white;
-    }
-    footer {
-=======
         border: 0;
         outline: none ;
         font-size: 18px;
@@ -311,9 +216,7 @@
         cursor: pointer;
         box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
        }
-    .footer{
-        
->>>>>>> main
+       footer {
         display: flex;
         border-top: solid rgba(0, 0, 0, 0.3) 2px;
         margin-left: 120px;
