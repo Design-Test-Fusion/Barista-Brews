@@ -10,6 +10,23 @@ html {
     background-color: white;
 }
 
+body {
+    background-color: rgb(235, 232, 225);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 15px;
+    background-image: url(../assets/coffee-branch-bean_67600-414.png);
+    background-position: right bottom;
+    mix-blend-mode: multiply;
+    background-size: 593px 651px;
+    background-repeat: no-repeat;
+}
+
+
+body::-webkit-scrollbar {
+    display: block;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -31,22 +48,6 @@ header ul a {
 
 a {
     text-decoration: none;
-}
-
-body {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 25px;
-    margin: 15px;
-    padding: 15px;
-    background-image: url(../assets/coffee-branch-bean_67600-414.png);
-    background-position: right bottom;
-    mix-blend-mode: multiply;
-    background-size: 593px 651px;
-    background-repeat: no-repeat;
-}
-
-body::-webkit-scrollbar {
-    display: block;
 }
 
 main {
@@ -109,6 +110,43 @@ main {
     align-items: center;
     padding: 30px;
     gap: 100px;
+}
+
+.beanImg {
+    width: 40px;
+}
+
+.drinkImage {
+    width: 200px;
+}
+
+.labelText {
+    font-size: 12px;
+}
+
+.cardTitle {
+    font-size: 20px;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5),
+        inset 0 0 12px rgba(0, 0, 0, 0.3);
+    width: 330px;
+    height: 350px;
 }
 
 .userSuggestions {

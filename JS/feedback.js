@@ -1,30 +1,62 @@
 'use strict'
-
-
-
-
+let feedbackArray=[]
+function Feedback(name, email,feedback) {
+  this.name = name;
+  this.email = email;
+  this.feedback = feedback;
+  feedbackArray.push(this)
+}
 
 
 let inputName=document.getElementsByClassName('name');
-  
+inputName.textContent=this.name;
+
   let inputemail=document.getElementsByClassName('email');
-  
+  inputemail.textContent=this.email;
+
   let feedback=document.getElementsByClassName('feedback');
- 
+  feedback.textContent=this.feedback;
 
-
-
-function final(e){
+function final(e) {
   e.preventDefault();
-if(inputName.textContent ==='null' && inputemail.textContent ==='null' && feedback.textContent ==='null' ) {
-  alert('fill the blank')
+  let name = e.target. username.value;
+  let email = e.target. email.value;
+  let feedback = e.target. feedback.value;
+
+  const drink = new Feedback(name, email, feedback);
+
+  const feedbackConst = localStorage.getItem('feedbackInLocalStorage');
+  let feedbackInLocalStorageArray = JSON.parse(feedbackConst)
+
+  if (feedbackInLocalStorageArray) {
+     feedbackInLocalStorageArray.push(feedback)
+  } else {
+      feedbackInLocalStorageArray = [feedback]
+  }
+
+  const stringfeedbackInLocalStorageArray = JSON.stringify(feedbackInLocalStorageArray)
+
+  // save data to localstorage
+  localStorage.setItem(' feedbackInLocalStorage ', feedbackInLocalStorageArray)
+
+  openPopup();
+  form1.reset();
+  
+
+
 }
-else {
-alert('thank you' )
- }
-};
 
 
-let submitform=document.getElementsByClassName('input');
-submitform.addEventListener('submit',final(e));
+function openPopup() {
+  let popup = document.getElementById("popup")
+  popup.classList.add("open-popup")
+}
+function closePopup() {
+  popup.classList.remove("open-popup")
+}
+
+
+let submitform=document.getElementById('form1');
+submitform.addEventListener('submit',final);
+
 
