@@ -17,36 +17,6 @@ inputName.textContent=this.name;
   let feedback=document.getElementsByClassName('feedback');
   feedback.textContent=this.feedback;
 
-
-
-// function final(e){
-//   e.preventDefault();
-//   let userName=e.target.username.value;
-//   let userEmail=e.target.email.value;
-//   let userFeedback=e.target.feedback.value;
-
-//   let newFeedback=new Feedback(userName,userEmail,userFeedback)
-
-
- 
-
-// if(userName =='null' && userEmail=='null' && userFeedback=='null' ) {
-//   alert('fill the blank')
-// }
-// else {
-// alert('thank you '+"  " +userName )
-//  }
-// store();
-
-// };
-
-
-// function store() {
-
-//    const jsonArray=JSON.stringify(feedbackArray);
-//  window.localStorage.setItem("feedback",jsonArray);
-// }
-
 function final(e) {
   e.preventDefault();
   let name = e.target. username.value;
